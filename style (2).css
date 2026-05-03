@@ -1,0 +1,109 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #1e3a3a, #0f172a);
+  color: #e5e7eb;
+  text-align: center;
+}
+
+/* HEADER */
+h1 {
+  background: linear-gradient(90deg, #0ea5e9, #2563eb);
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* NAV */
+.nav {
+  margin-top: 15px;
+}
+
+/* BUTTONS */
+button {
+  background: #f97316; /* orange */
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ACTIVE / SPECIAL BUTTON */
+button:nth-child(2) {
+  background: linear-gradient(135deg, #38bdf8, #2563eb); /* blue active */
+}
+
+/* HOVER */
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* PAGE SECTIONS */
+.page {
+  padding: 20px;
+}
+
+/* SUBJECT TITLE */
+h2 {
+  color: #22d3ee;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* CONTENT CARD */
+#subjectContent {
+  background: rgba(255, 255, 255, 0.08);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* TOPIC TITLE */
+h3 {
+  color: #2dd4bf;
+  margin-top: 10px;
+}
+
+/* TEXT */
+p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* SUBJECT BUTTONS (Physics, Chemistry, Biology) */
+#subjects button {
+  width: 120px;
+  font-weight: bold;
+}
+
+/* QUIZ / EXERCISE BOX */
+#quiz, #exerciseContent {
+  background: rgba(255, 255, 255, 0.08);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+/* SMALL SCREEN */
+@media (max-width: 600px) {
+  button {
+    width: 80%;
+  }
+}

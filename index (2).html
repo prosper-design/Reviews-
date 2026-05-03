@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StudyHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📚 StudyHub</h1>
+
+<div class="nav">
+  <button onclick="showPage('home')">Home</button>
+  <button onclick="showPage('subjects')">Subjects</button>
+  <button onclick="showPage('exercises')">Exercises</button>
+  <button onclick="showPage('quizPage')">Quiz</button>
+</div>
+
+<div id="home" class="page">
+  <h2>Welcome! Select a subject to begin.</h2>
+</div>
+
+<div id="subjects" class="page" style="display:none;">
+  <h2>Subjects</h2>
+
+  <button onclick="loadSubject('physics')">Physics</button>
+  <button onclick="loadSubject('chemistry')">Chemistry</button>
+  <button onclick="loadSubject('biology')">Biology</button>
+
+  <div id="subjectContent"></div>
+</div>
+
+<div id="exercises" class="page" style="display:none;">
+  <h2>Exercises</h2>
+  <div id="exerciseContent"></div>
+</div>
+
+<div id="quizPage" class="page" style="display:none;">
+  <h2>Quiz</h2>
+  <div id="quiz"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
